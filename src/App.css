@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+* {
+	box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.site-header {
+	background-color: #F55A5A;
+	color: #fff;
+	padding: 30px 5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.journal-list {
+	max-width: 700px;
+	padding: 5%;
+	margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+	display: grid;
+	gap: 25px;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #f5f5f5;
+	margin-bottom: 40px;
 }
-
-.App-link {
-  color: #61dafb;
+.card-photo {
+	grid-column: 1 / 1;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+.card-content {
+	grid-column: 2 / 4;
 }
